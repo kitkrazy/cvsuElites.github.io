@@ -780,8 +780,8 @@ padding-bottom:1rem;
     max-width: 300px;
     height: auto;
     border-radius: 10px;
-    margin: 0 auto 10px; /* Center the image horizontally and add bottom margin */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto 10px; 
+    display: block; 
 }
 
 
@@ -837,16 +837,16 @@ padding-bottom:1rem;
 .open-positions {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px; /* Add negative margin to offset the padding */
+    margin: 0 -10px; 
 }
 
 .position-box {
-    width: calc(33.33% - 20px); /* Calculate width with 20px margin */
+    width: calc(33.33% - 20px); 
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 10px; /* Add margin for spacing between boxes */
+    margin: 10px; 
     box-sizing: border-box;
 }
 
@@ -1053,45 +1053,45 @@ grid-template-columns: 1fr 1fr;
 }
 
 main {
-    flex-direction: column; /* Stack sections vertically on smaller screens */
-    align-items: center; /* Center sections horizontally on smaller screens */
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .section {
-    flex-basis: calc(100% - 20px); /* Take up full width with spacing */
+    flex-basis: calc(100% - 20px); 
 }
 
 .card {
-    max-width: 300px; /* Limit card width on smaller screens */
+    max-width: 300px; 
 }
 
 .card p {
-    padding-bottom: 1rem; /* Add padding to paragraph */
+    padding-bottom: 1rem; 
 }
 
 .merchandise-image {
-    max-width: 100%; /* Ensure images fill container width */
+    max-width: 100%; 
 }
 
 .buy-button,
 .next-button {
-    width: 100%; /* Make buttons fill container width */
-    margin-top: 10px; /* Add top margin between buttons */
+    width: 100%; 
+    margin-top: 10px; 
 }
 
 .cardBox {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center children horizontally */
-    text-align: center; /* Center text inside the card */
+    align-items: center; 
+    text-align: center; 
 }
 
 .cardBox img {
-    margin-bottom: 10px; /* Add margin below the image */
+    margin-bottom: 10px;
 }
 
 .btn {
-    width: fit-content; /* Set width to fit content */
+    width: fit-content; 
     padding:10px 20px;
 }
 
@@ -1108,13 +1108,13 @@ main {
 
 .open-positions {
     flex-wrap: wrap;
-    justify-content: center; /* Center align position boxes */
+    justify-content: center; 
 }
 
 .position-box {
-    width: calc(33.33% - 20px); /* Display 3 columns per row */
-    margin: 10px; /* Adjust margin for spacing */
-    box-sizing: border-box; /* Ensure padding and border are included in width */
+    width: calc(33.33% - 20px); 
+    margin: 10px; 
+    box-sizing: border-box; 
 }
 
 .position-box h4 {
