@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+   
+
+    <!--IMPORT SLIDERS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+ 
+    <!--IMPORT FONTS-->
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+     <link rel="shortcut icon" type="x-icon" href="imgs/logoElites.png">
+     <link rel="stylesheet" href="style.css">
+    <title>CvSU Elites - Shop</title>
+</head>
+<body>
+    <div id="home"></div>
+    <nav>
+      <div class="container nav__container">
+          <a href="index.html"><img class="logoClass" src="imgs/logoElites.png"></a>
+        <ul class="nav__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="abtdv.html">About Dev</a></li>
+        <li><a href="wwr.html">Who we are</a></li>
+          </ul>
+       <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+       <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    
+    
+      </div>
+    
+    
+    </nav>
+
+    <main>
+        <section id="membership" class="section">
+            <h2><font color="#F18700">Membership</font></h2>
+            <div class="card">
+                <h3>Membership Card</h3>
+                <ul>
+                    <li>Type of Membership: Premium</li>
+                    <li>Merchandise: T-shirt, Mug</li>
+                    <li>Perks: Exclusive access, Discounts</li>
+                    <li>Purchase option: One-time, Subscription</li>
+                    <li>Event Discounts: Up to 20%</li>
+                    <li>Price: $99/year</li>
+                    <li>Access to Resources: Yes</li>
+                    <button class="buy-button">Purchase</button>
+                </ul>
+            </div>
+        </section>
+
+        <section id="merchandise" class="section">
+            <h2><font color="#F18700">Merchandise</font></h2>
+            <div class="card">
+                <img id="merchandise-image" src="imgs/lanyards.jpg" alt="Merchandise Image" class="merchandise-image">
+                <h3 id="merchandise-name">Merchandise Name</h3>
+                <p id="merchandise-price">Price: 00.00</p>
+                <button class="buy-button">Buy Now</button>
+                <button id="next-button" class="next-button">Next</button>
+            </div>
+        </section>
+    </main>
+
+    </section>
+    <footer>  
+     <div id="footer"></div>
+     <div class="container footer__container">
+       <div class="footer__1">
+         <a href="index.html" class="footer__logo"><img src="imgs/logoElites.png" class="logoClassFooter"></a>
+         <br>
+          <p>
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, itaque.
+          </p>
+       </div>
+   
+       
+       <div class="footer__2">
+         <h4>Permalinks</h4>
+         <ul class="permalinks">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Shop</a></li>
+         <li><a href="#">About Dev</a></li>
+         <li><a href="#">Who we are</a></li>
+         </ul>
+       </div>
+   
+       <div class="footer__3">
+         <h4>Terms of Services</h4>
+         <ul class="privacy">
+           <li><a href="#">Privacy Policy</a></li>
+           <li><a href="#">Terms and conditions</a></li>
+           <li><a href="#">Credits</a></li>
+           <li><a href="#">Copyright</a></li>
+         </ul>
+       </div>
+   
+       <div class="footer__4">
+         <h4>Contact Us</h4>
+        <div>
+          <p>0999999999+</p>
+          <p>cvsuElites@gmail.com</p>
+        </div>
+   
+   
+   <ul class="footer__socials">
+     <li>
+       <a href="#" target="_blank"><i class="uil uil-facebook-f"></i></a>
+     </li>
+     <li>
+       <a href="#" target="_blank"><i class="uil uil-instagram-alt"></i></a>
+     </li>
+   </ul>
+       </div>
+   
+      
+     </div>
+     <div class="footer__copyright">
+       <small>Copyright &copy; CvSU Elites</small>
+     </div>
+   </footer>
+ 
+ 
+ 
+ 
+     
+     
+ 
+ <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+ <script src="./main.js"></script>
+<script>
+   const merchandiseImages = ["imgs/lanyards.jpg", "imgs/orgShirts.jpg", "imgs/tshirts.jpg"];
+const merchandiseNames = ["CvSU Elites Lanyards", "Organization Shirts", "Graphic Tees"];
+const merchandisePrices = ["50 Pesos", "200 Pesos", "150 Pesos"];
+
+let currentIndex = 0;
+
+const merchandiseImage = document.getElementById('merchandise-image');
+const merchandiseName = document.getElementById('merchandise-name');
+const merchandisePrice = document.getElementById('merchandise-price');
+const nextButton = document.getElementById('next-button');
+
+nextButton.addEventListener('click', function() {
+    currentIndex = (currentIndex + 1) % merchandiseImages.length;
+    updateMerchandise();
+});
+
+function updateMerchandise() {
+    merchandiseImage.src = merchandiseImages[currentIndex];
+    merchandiseName.textContent = merchandiseNames[currentIndex];
+    merchandisePrice.textContent = "Price: " + merchandisePrices[currentIndex];
+}
+ 
+</script>
+
+ 
+ 
+     
+ </body>
+ </html>
+     
+ 
